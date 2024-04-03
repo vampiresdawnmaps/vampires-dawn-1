@@ -31,7 +31,6 @@ You may use the python scripts to generate the map resources yourself by followi
 1. Install Python 3.
 1. Install the game (I used the German version).
 1. Download the executables `lcfviz.exe`, `lcf2xml.exe`, and `lmu2png.exe` from https://easyrpg.org/tools/ and place them next to the python script files.
-1. Create directories `out/html/images` and `out/temp` in the directory containing the script files.
-1. Inside the game's installation directory run `convert-lmt.py` and `convert-lmu.py` to extract area and other information from the game files.
-1. Inside the game's installation directory run `convert-lmu.py` to generate the map images.
+1. In the directory containing the script files create a directory called `temp`.
+1. Inside the game's installation directory run `convert-lmt.py` and `convert-lmu.py` to extract pictures as well as area and other information from the game files.
 1. In the directory containing the script files run `collect-map-data.py` to generate `map-data.js`.
