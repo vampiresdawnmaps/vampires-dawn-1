@@ -2,7 +2,7 @@ import json, os, re, sys
 import xml.etree.ElementTree as ET
 
 
-temp_dir = os.path.join(os.path.dirname(__file__), 'out', 'temp')
+temp_dir = os.path.join(os.path.dirname(__file__), 'temp')
 
 
 map_data = {}
@@ -106,7 +106,7 @@ for i, (map_id, map) in enumerate(map_data.items()):
 
 json = json.dumps(map_data)		
 
-outfilename = os.path.join(os.path.dirname(__file__), 'out', 'html', 'map-data.js')
+outfilename = os.path.join(os.path.dirname(__file__), 'docs', 'map-data.js')
 with open(outfilename, 'w', encoding='utf-8') as outfile:
 	outfile.write('window.mapData = ')
 	outfile.write(json)
